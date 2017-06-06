@@ -154,6 +154,7 @@ export default class ModalDropdown extends Component {
       <TouchableOpacity ref={button => this._button = button}
                         disabled={this.props.disabled}
                         accessible={this.props.accessible}
+                        activeOpacity={1}
                         onPress={this._onButtonPress.bind(this)}>
         {
           this.props.children ||
